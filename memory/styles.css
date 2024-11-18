@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.game-card {
+  width: 100px;
+  height: 100px;
+  color: transparent;
+  background-color: #4fa0f8;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 3px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.show {
+  color: black;
+  background-color: white;
+}

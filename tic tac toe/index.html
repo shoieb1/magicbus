@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dragons vs Unicorns</title>
+  <style>
+    /* Basic CSS for styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .wrapper {
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 span {
+      color: #ff6347; /* Highlight for "vs" */
+    }
+
+    .current-status {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .current-status img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 10px;
+      justify-content: center;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border: 2px solid #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .game-end-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .game-end-overlay.active {
+      display: flex;
+    }
+
+    .winning-message p {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .btn-container {
+      margin-top: 20px;
+    }
+
+    .reset-button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .reset-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Dragons <span>vs</span> Unicorns</h1>
+    <div class="current-status" id="currentStatus">
+      <img src="https://assets.codepen.io/2558758/unicorn.png" alt="" id="currentBeastImg">
+      <p>'s turn</p>
+    </div>
+    <div class="board" id="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div class="game-end-overlay" id="gameEndOverlay">
+      <div class="winning-message" data-winning-message>
+        <p></p>
+      </div>
+      <div class="btn-container">
+        <button class="reset-button" id="resetButton">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Add JavaScript functionality here if needed
+    // Example: Script to handle game logic
+  </script>
+   <script src="script.js"></script>
+</body>
+</html>

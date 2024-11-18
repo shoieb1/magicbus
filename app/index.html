@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .card p {
+      margin: 0 15px 20px;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      background: #4facfe;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Games Gallery</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="/images/memory.jpeg" alt="Game 1">
+        <h2>Memory Game</h2>
+        <p>Test your memory skills with this fun game!</p>
+        <a href="/memory/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/2048.png" alt="Game 2">
+        <h2>2048 master</h2>
+        <p>Challenge yourself with interesting trivia numbers.</p>
+        <a href="/2048-master/2048-master/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/tic tac toe.jpeg" alt="Game 3">
+        <h2>Tic Tac Toe</h2>
+        <p>Play the classic Tic Tac Toe game.</p>
+        <a href="/tic tac toe/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/packman.jpeg" alt="Game 4">
+        <h2>Packman</h2>
+        <p>joy game</p>
+        <a href="/Pacman-Game-master/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/8ball pool.jpeg" alt="Game 4">
+        <h2>8 ball pool</h2>
+        <p>pull your colour ball in hole.</p>
+        <a href="8ball_pool-master/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/chess.jpeg" alt="Game 5">
+        <h2>chess</h2>
+        <p>be a champion</p>
+        <a href="/Chess-Game-master/ChessGame/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/sudoko.png" alt="Game 6">
+        <h2>Sudoku</h2>
+        <p>Enjoy solving challenging Sudoku puzzles.</p>
+        <a href="/sudoku-play-main/index.html">Play Now</a>
+      </div>
+      <div class="card">
+        <img src="/images/snake.jpeg" alt="Game 7">
+        <h2>Snake Game</h2>
+        <p>Relive the nostalgia with the classic Snake game.</p>
+        <a href="/snakes-and-ladders-main/index.html">Play Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
